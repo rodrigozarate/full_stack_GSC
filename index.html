@@ -4,6 +4,14 @@
 		<meta charset="UTF-8">
 		<title>Columbus Backery Wholesale</title>
         <link rel="stylesheet" href="styles.css">
+        <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+        <script
+			  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+			  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+			  crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div class="main">
@@ -17,6 +25,7 @@
                 <div class="col1">
                     <div class="listrow">
                         <div class="itemheader">Some values here</div>
+                        <div id="prodlist"></div>
                         <div class="item">
                             <div class="cant">1</div>
                             <div class="plusbutton">+</div>
@@ -50,9 +59,21 @@
                 </div>
                 <div class="col2">
                     <div class="tabsrow">
-                        <div class="tab">Elemnt 1</div>
-                        <div class="tab">Elemnt 2</div>
-                        <div class="tab">Elemnt 3</div>
+                        <div class="tab ini selected">
+                            <span>Bebidas</span>
+                        </div>
+                        <div class="tab">
+                            <span>Comidas</span>
+                        </div>
+                        <div class="tab">
+                            <span>Repostería y Panadería</span>
+                        </div>
+                        <div class="tab end">
+                            <span>Refrigerados</span>
+                        </div>
+                        <div class="tab menu">
+                            <span>=</span>
+                        </div>
                     </div>
                     <div class="gridrow">
                         <div class="product">
@@ -93,3 +114,9 @@
         </div>
 	</body>
 </html>
+<script>
+$(document).on('click', $(".product") , function() {
+    alert("llamo");
+     $('#prodlist').append('<div>I am new here</div>');
+});
+</script>

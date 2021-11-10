@@ -94,6 +94,18 @@ border: 1px solid #0f0;
     display: flex;
     flex-grow: 1;
 }
+.tabsrow{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1px;
+}
+.tabsrow selected{
+    border-bottom: 2px solid #34d;
+}
+.tabsrow span{
+    padding:4px;
+    border-right: 1px solid #ccc;
+}
 .gridrow{
     display: flex;
     flex-wrap: wrap;
