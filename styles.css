@@ -4,7 +4,7 @@ body{
     font-family: sans-serif;
 }
 div{
-border: 1px solid #F00;
+border: 1px solid #0f0;
 }
 .main{
     display: flex;
@@ -94,10 +94,12 @@ border: 1px solid #F00;
 .gridrow{
     display: flex;
     flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
 }
 .product{
     width: 10%;
 }
-.product img{
-    width: auto;
+img {
+    max-width:100%;
 }
