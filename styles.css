@@ -145,6 +145,9 @@ border: 1px solid #0f0;
     display: flex;
     flex-wrap: wrap;
 }
+.paymethod div{
+    max-width: 28%;
+}
 .paybutton{
     width: 200px;
     height: 200px;
