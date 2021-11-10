@@ -96,5 +96,8 @@ border: 1px solid #F00;
     flex-wrap: wrap;
 }
 .product{
-    width: 30%;
+    width: 10%;
+}
+.product img{
+    width: auto;
 }
