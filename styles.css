@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
 div{
 border: 1px solid #F00;
 }
@@ -8,7 +13,20 @@ border: 1px solid #F00;
 .navbar sidebar{
     flex-direction: column;
     flex-grow: 1;
+    background-color: #333;
+    color: #fff;
 }
+.topbar{
+    height: 90px;
+    background-color: blue;
+}
+.logo{
+    padding: 6px;
+}
+.userprofile{
+    padding: 6px;
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -39,4 +57,39 @@ border: 1px solid #F00;
 .item{
     display: flex;
     flex-direction: row; 
+}
+.cant{
+    display: flex;
+    flex-grow: 1;
+}
+.plusbutton{
+    display: flex;
+    flex-grow: 1;
+}
+.minusbutton{
+    display: flex;
+    flex-grow: 1;
+}
+.description{
+    display: flex;
+    flex-grow: 2;
+}
+.tax{
+    display: flex;
+    flex-grow: 1;
+}
+.total{
+    display: flex;
+    flex-grow: 1;
+}
+.destroy{
+    display: flex;
+    flex-grow: 1;
+}
+.gridrow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
+    width: 30%;
 }
